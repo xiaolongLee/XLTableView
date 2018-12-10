@@ -17,7 +17,8 @@
 @implementation XLTableView
 
 - (void)layoutSubviews{
-    
+    [self resetContentOffestIfNeeded];
+    [super layoutSubviews];
 }
 
 - (void)resetContentOffestIfNeeded {
